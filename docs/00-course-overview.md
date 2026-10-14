@@ -5,7 +5,7 @@
 **핵심 주제:** AI 코딩 에이전트와 개발자가 협력하여 요구사항을 정리하고, React·Node.js(Express) 기반의 **중고차 매물 관리 CRUD 프로토타입**을 개선·검증한 뒤 GitHub·Render·Vercel에 배포하는 전 과정을 소개합니다.
 **강의 대상:** AI응용소프트웨어공학과 학생 및 AI 기반 소프트웨어 개발에 관심 있는 학습자. JavaScript, 웹 브라우저, HTTP/JSON 기초를 알면 도움이 되지만 이론은 입문자도 이해하도록 구성했습니다.
 **강의 형태:** 학생 참여 없이 진행하는 녹화 강의. 설치·인증·초기 클라우드 배포는 촬영 전에 완료하고, 녹화 중에는 AI를 이용한 핵심 변경·검증·자동 배포 확인에 집중합니다.
-**교재 상태:** GitHub 저장소에 코드·자동 API 테스트·React 빌드 워크플로를 등록했습니다. GitHub Actions의 실제 성공 여부는 Actions 이력에서 확인합니다. Codespaces·Render·Vercel의 실제 통합 배포, 학교 PPT 템플릿, 계정 인증 및 스튜디오 촬영은 별도 검증이 필요합니다.
+**교재 상태:** GitHub 저장소에 코드·자동 API 테스트·React 빌드 워크플로를 등록했습니다. 2026-10-14 GitHub Actions의 API 테스트 및 React 빌드 검사가 통과했습니다([실행 기록](https://github.com/comstudynews/ai-vibe-coding-2026/actions/runs/38520612469)). Codespaces·Render·Vercel의 실제 통합 배포, 학교 PPT 템플릿, 계정 인증 및 스튜디오 촬영은 별도 검증이 필요합니다.
 **실습 GitHub:** [comstudynews/ai-vibe-coding-2026](https://github.com/comstudynews/ai-vibe-coding-2026) 본문은 검증하지 않은 결과를 성공했다고 기술하지 않습니다.
 # 학습목표
 ① 바이브 코딩과 AI 보조 소프트웨어 개발의 차이를 설명합니다.

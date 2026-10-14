@@ -519,4 +519,4 @@ curl -i -X POST http://localhost:3000/api/cars \
 - `NODE_ENV=production`으로 실행한 공개 Render 서비스는 **조회 전용**입니다. 쓰기 요청은 403을 반환합니다.
 - 전체 CRUD는 비공개 Codespaces 환경에서 시연합니다. 외부 클라우드에서는 화면·API 조회, 자동 배포를 확인합니다.
 - CORS는 브라우저 접근 정책이며 API 인증을 대신하지 않습니다.
-**검증 상태:** 코드에 자동 테스트를 포함하고 GitHub Actions에서 npm 기반 API 테스트 및 React 빌드를 수행합니다. 실제 GitHub Actions 통과 여부는 작업 이력으로 확인해야 하며 Render·Vercel의 실제 배포는 별도 리허설이 필요합니다. 촬영 전 리허설에서 명령·버전·데이터 흐름을 확인해야 합니다.
+**검증 상태:** 코드에 자동 테스트를 포함하고 GitHub Actions에서 npm 기반 API 테스트 및 React 빌드를 수행합니다. GitHub Actions 자동 검사도 통과했습니다([실행 기록](https://github.com/comstudynews/ai-vibe-coding-2026/actions/runs/38520612469)). Render·Vercel의 실제 배포는 별도 리허설이 필요합니다. 촬영 전 리허설에서 명령·버전·데이터 흐름을 확인해야 합니다.
