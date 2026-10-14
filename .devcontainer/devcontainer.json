@@ -1,0 +1,19 @@
+{
+  "name": "ai-vibe-coding-node24",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+  "forwardPorts": [
+    5173,
+    3000
+  ],
+  "portsAttributes": {
+    "3000": {
+      "label": "Express API",
+      "onAutoForward": "silent"
+    },
+    "5173": {
+      "label": "React UI",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "npm install --prefix server && npm install --prefix client"
+}
