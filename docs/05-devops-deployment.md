@@ -88,7 +88,7 @@ curl -i https://YOUR-BACKEND.onrender.com/api/cars
 ② Vercel의 VITE_API_BASE_URL에 Render 주소를 등록해 프론트엔드를 배포합니다.
 ③ Vercel에 생성된 실제 Origin을 Render의 APP_CORS_ALLOWED_ORIGINS에 등록합니다.
 ④ Render에서 서비스 재배포 또는 설정 반영을 완료합니다.
-⑤ 시크릿 브라우저 창에서 Vercel 웹앱을 열고 매물 등록·수정·삭제까지 검증합니다.
+⑤ 시크릿 브라우저 창에서 Vercel 웹앱을 열고 매물 **목록 조회·검색**을 확인합니다. 공개 Render에서는 `GET /api/cars` 200, `GET /api/config` `{"readOnly":true}`, POST·PUT·DELETE 403을 각각 확인합니다. 전체 CRUD는 비공개 Codespaces에서만 시연합니다.
 **Origin 예시:** [https://your-demo.vercel.app](https://your-demo.vercel.app) (맨 끝 슬래시 없음).
 CORS는 브라우저의 교차 출처 읽기를 제어하는 정책입니다. **인증·인가를 대신하지 않으므로**, CORS로 허용되지 않은 도구나 서버에서의 직접 HTTP 요청까지 막을 수 있는 것은 아닙니다.
 ## 5.8 5단계 — 개발 환경과 공개 배포를 구분한 통합 검증
@@ -101,7 +101,7 @@ CORS는 브라우저의 교차 출처 읽기를 제어하는 정책입니다. **
 - [ ] `GET /api/config` 응답이 `{"readOnly":true}`입니다.
 - [ ] `GET /api/cars`는 200이고 브라우저 CORS 오류가 없습니다.
 - [ ] POST/PUT/DELETE 요청은 403으로 차단됩니다.
-- [ ] GitHub Push 이후 각 플랫폼의 자동 배포 결과가 반영됩니다.
+- [ ] GitHub Push 이후 GitHub Actions의 API 테스트·React 빌드와 Render·Vercel의 Git 연동 배포 결과를 **각각** 확인합니다. 현재 저장소에서 CI 통과는 배포를 강제적으로 제어하는 승인 게이트가 아닙니다.
 - [ ] 환경변수에 비밀 정보가 없고 로그에 계정 비밀값이 노출되지 않습니다.
 **원칙:** 서버에 사용자 인증이 없다면 공개 클라우드에서 쓰기 가능한 CRUD를 그대로 제공하지 않습니다.
 ## 5.9 GitHub Actions를 이용한 자동 API 테스트 및 React 빌드
