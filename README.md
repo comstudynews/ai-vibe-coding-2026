@@ -4,6 +4,12 @@
 
 [Notion 특강 교재](https://app.notion.com/p/3f991bd5a9ac81f59c2bc4cab7f35c1a) · [강의 문서](docs/README.md)
 
+## 프로젝트 구성도
+
+![GitHub Codespaces·Codex CLI·GitHub Actions·React·Express·Vercel·Render 프로젝트 구성도](assets/project-architecture.svg)
+
+개발은 GitHub Codespaces(Node.js 24)에서 Codex CLI와 함께 진행합니다. GitHub Actions가 API 테스트와 React 빌드를 검사하며, 배포 시 프론트엔드는 Vercel, 백엔드는 Render에서 실행합니다.
+
 ## 프로젝트 구조
 
 ```text
